@@ -22,6 +22,8 @@ final class MenuPresenter: MenuPresenterProtocol, MenuInteractorOutputProtocol {
 
     // MARK: MenuPresenterProtocol (from the view)
 
+    nonisolated deinit {}
+    
     func viewDidLoad() {
         view?.showLoading(true)
         interactor.loadMenu()
